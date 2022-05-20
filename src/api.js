@@ -8,7 +8,7 @@ const searchAsync = async (searchString) => {
     return await fetch(url).then(r => r.json());
 }
 
-const favsUrl = `${config.customApiBaseUrl}/favorites`;
+const favsUrl = `${config.customApiBaseUrl}/favorite`;
 
 const saveFavs = async (favs) =>{
     const url = favsUrl;

@@ -8,7 +8,7 @@ const SavedFavoritesPage = () => {
   const [favs, setFavs] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () =>{
+    const fetchData = async () => {
       const id = params.id;
       const response = await api.getFavs(id);
       console.log(response);
@@ -21,7 +21,7 @@ const SavedFavoritesPage = () => {
 
   return (
     <>
-      <h1>{favs.title}</h1>
+      <h1>asefeujhdfe{favs.title}</h1>
       {favs.movies.map(m => (
         <div key={m.imdbId}>
           <p>{m.Title} - {m.Year}</p>

@@ -19,11 +19,6 @@ const MainPage = () => {
         </aside>
     </main>
 </div>
-    // <div>
-    //   <Header/>
-    //   <Movies />
-    //   <Favorites/>
-    // </div>
   )
 }
 

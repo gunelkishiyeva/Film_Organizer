@@ -30,14 +30,19 @@ const Favorites = () => {
       <input className="favorites__name" placeholder='Title' value={title} onChange={e => setTitle(e.target.value)}/>
       {favorites.map(f => {
         return (
-          <div key={f.imdbID}>
-            <p>{f.Title}</p>
-            <button  disabled={savedId} onClick={e => dispatch(removeFav(f.imdbID))}>X</button>
+        <>
+         <div className="favorites__list" key={f.imdbID}>
+            <span>{f.Title} - ({f.Year})</span>
+            
           </div>
+          <div> <button  disabled={savedId} onClick={e => dispatch(removeFav(f.imdbID))}>X</button></div>
+         
+        </>
+         
         )
       })}
       {!savedId
-        ? <button disabled={!title} className="favorites__save" onClick={handleSave}>Save List</button>
+        ? <button disabled={!title} className="favorites__save" onClick={handleSave}>Сохранить список</button>
         : <Link to={`/saved-favorite/${savedId}`}>Go to Saved</Link>}
 
 

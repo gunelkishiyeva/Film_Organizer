@@ -4,11 +4,11 @@ import './Header.css';
 class Header extends Component {
     render() { 
         return (
-            <header className="header">
+            <div className="header">
                 <h1 className="header__title">
-                    Mustee
+                    Mustsee
                 </h1>
-            </header>
+            </div>
         );
     }
 }

@@ -22,9 +22,10 @@ const SearchBar = ({ onSubmit }) => {
     <form className="search-box__form" onSubmit={handleSubmit}>
        <label className="search-box__form-label">
     Искать фильм по названию:
-      <input   className="search-box__form-input" name='search' type='search' required />
-      <button type='submit' className="search-box__form-submit">Search</button>
+      <input   className="search-box__form-input" name='search' type='search' placeholder="Например, Shawshank Redemption" required />
+     
       </label>
+      <button type='submit' className="search-box__form-submit"> Искать</button>
     </form>
     </div>
   )

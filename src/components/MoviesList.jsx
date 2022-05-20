@@ -3,7 +3,7 @@ import MoviesListItem from './MoviesListItem'
 
 const MoviesList = ({ movies }) => {
   return (
-    <div>
+    <div >
       {movies?.length
         ? movies.map(m => <MoviesListItem movie={m} key={m.imdbID} />)
         : <h1>No movies.</h1> }
@@ -11,4 +11,4 @@ const MoviesList = ({ movies }) => {
   )
 }
 
-export default MoviesList
+export default MoviesList;
