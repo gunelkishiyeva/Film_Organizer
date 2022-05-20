@@ -1,0 +1,6 @@
+{
+    "apiBaseUrl": "http://www.omdbapi.com",
+    "apiKey": "dcaa84ad",
+
+    "customApiBaseUrl": "http://localhost:3200"
+}
