@@ -11,14 +11,15 @@ const MoviesListItem = ({movie}) => {
   }
   return (
     
-  
+  <>
 <article className="movie-item">
       <img className="movie-item__poster" src={movie.Poster} alt={movie.Title} />
       <div className="movie-item__info">
-      <h3 className="movie-item__title">{movie.Title} - ({movie.Year})</h3>
+      <h3 className="movie-item__title">{movie.Title} ({movie.Year})</h3>
       <button className="movie-item__add-button" onClick={handleClick} disabled={savedId}>Add to Favourites</button>
     </div>
     </article>
+    </>
   )
 }
 

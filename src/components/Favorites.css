@@ -15,8 +15,31 @@
 
 .favorites__list {
     margin-bottom: 24px;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(0, 8, 7);
 }
 
+.removeButton {
+    display: flex;  
+}
+.remove-img{
+    width: 25px; 
+}
+.rem {
+    border-radius: 50%;
+    border-style: none;
+    background-color: white;
+ padding: 1px 15px ;
+ margin-bottom: 20px;
+  
+}
+.titleandbutton{
+    display: flex;
+    justify-content: center;
+}
 .favorites__save {
     border: none;
     background-color: #496DDB;
@@ -29,5 +52,10 @@
 .favorites__save:hover {
     cursor: pointer;
     opacity: 0.9;
+    transition: all 0.2s linear;
+}
+.favorites__save:disabled {
+    cursor: pointer;
+    opacity: 0.5;
     transition: all 0.2s linear;
 }

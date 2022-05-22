@@ -1,6 +1,6 @@
 .header {
     background: #496DDB;
-    padding: 20px calc(50% - 500px) 10px;
+    padding: 20px calc(50% - 500px) 5px;
 }
 
 .header__title {
@@ -8,5 +8,5 @@
     color: #FFEEDB;
     font-size: 45px;
     font-weight: 400;
-    margin: 0 0 0 40px ;
+    margin: 0 0 0px 40px ;
 }

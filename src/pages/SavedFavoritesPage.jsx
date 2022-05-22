@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { api } from '../api';
-
-
+import './SavedFavorites.css';
 const SavedFavoritesPage = () => {
   const params = useParams();
-  const [favs, setFavs] = useState([]);
+  const [favs, setFavs] = useState({title:'', movies: []});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,14 +19,16 @@ const SavedFavoritesPage = () => {
   }, [])
 
   return (
-    <>
-      <h1>asefeujhdfe{favs.title}</h1>
+    <div className='fav-list'>
+     <div> <h1 className='title-list'>{favs.title}</h1></div>
       {favs.movies.map(m => (
-        <div key={m.imdbId}>
-          <p>{m.Title} - {m.Year}</p>
+      //  <Link to={`https://www.imdb.com/title/${m.imdbID}/`} >
+       <div key={m.imdbID} className='list-item'>
+          <p>{m.Title} {m.Year}</p>
         </div>
+        // </Link>
       ))}
-    </>
+    </div>
   )
 }
 

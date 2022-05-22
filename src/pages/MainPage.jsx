@@ -1,7 +1,7 @@
 import React from 'react'
 import Favorites from '../components/Favorites'
 import Movies from '../components/Movies';
-import Header from '../components/Header'
+import Header from '../components/Header';
 import './MainPage.css'
 const MainPage = () => {
   return (
@@ -17,6 +17,7 @@ const MainPage = () => {
         <aside className="main-page__favorites">
             <Favorites />
         </aside>
+       
     </main>
 </div>
   )

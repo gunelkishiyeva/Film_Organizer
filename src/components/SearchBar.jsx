@@ -16,19 +16,16 @@ const SearchBar = ({ onSubmit }) => {
   }
 
   return (
-   
-   
 <div className="search-box">
     <form className="search-box__form" onSubmit={handleSubmit}>
        <label className="search-box__form-label">
-    Искать фильм по названию:
-      <input   className="search-box__form-input" name='search' type='search' placeholder="Например, Shawshank Redemption" required />
-     
+       Search movie by title:
+      <input  className="search-box__form-input" name='search' type='search' placeholder="For example, Shawshank Redemption"/>  
       </label>
-      <button type='submit' className="search-box__form-submit"> Искать</button>
+      <button type='submit' className="search-box__form-submit">Search</button>
     </form>
     </div>
   )
 }
 
-export default SearchBar
+export default SearchBar;
