@@ -22,11 +22,9 @@ const SavedFavoritesPage = () => {
     <div className='fav-list'>
      <div> <h1 className='title-list'>{favs.title}</h1></div>
       {favs.movies.map(m => (
-      //  <Link to={`https://www.imdb.com/title/${m.imdbID}/`} >
        <div key={m.imdbID} className='list-item'>
-          <p>{m.Title} {m.Year}</p>
+          <a href={'https://www.imdb.com/title/' +m.imdbID}>{m.Title} {m.Year}</a>
         </div>
-        // </Link>
       ))}
     </div>
   )

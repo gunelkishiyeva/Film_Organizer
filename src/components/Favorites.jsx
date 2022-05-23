@@ -35,7 +35,7 @@ const Favorites = () => {
       })}
       {!savedId
         ? <button disabled={!title} className="favorites__save" onClick={handleSave}>Save list</button>
-        : <Link to={`/saved-favorite/${savedId}`}>Go to Saved List</Link>}
+        : <Link to={`/saved-favorite/${savedId}`}><button>Go to Saved List</button>Go to Saved List</Link>}
     </div>
   )
 }
