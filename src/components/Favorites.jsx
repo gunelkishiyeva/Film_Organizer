@@ -29,7 +29,8 @@ const Favorites = () => {
             <span>{f.Title} ({f.Year})</span>
             
           </div>
-          <div className='removeButton'> <button  className='rem' disabled={savedId} onClick={e => dispatch(removeFav(f.imdbID))}><img className='remove-img' src={Remove}/></button></div> 
+          <div className='removeButton'> <button  className='rem' disabled={savedId} onClick={e => dispatch(removeFav(f.imdbID))}><img className='remove-img' src={Remove}/></button>
+          </div> 
         </div>         
         )
       })}

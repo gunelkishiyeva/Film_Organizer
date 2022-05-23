@@ -2,6 +2,7 @@ import React from 'react'
 import Favorites from '../components/Favorites'
 import Movies from '../components/Movies';
 import Header from '../components/Header';
+import '../components/Header.css'
 import './MainPage.css'
 const MainPage = () => {
   return (

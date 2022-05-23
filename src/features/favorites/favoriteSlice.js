@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-
 const favoriteSlice = createSlice({
     name:'favorite',
     initialState: {
@@ -14,16 +13,13 @@ const favoriteSlice = createSlice({
            if(!state.favorites.some(f => f.imdbID === action.payload.imdbID)) {
                state.favorites.push(action.payload);
            }
-        },
-        
+        },  
         removeFav: (state, action) => {
             state.favorites = state.favorites.filter(f => f.imdbID !== action.payload);
-
         },
          saveFavs: (state, action) =>{
              state.savedId = action.payload;
          }
-
     }
     });   
 export const selectSavedId = (state) => state.favorite.savedId;

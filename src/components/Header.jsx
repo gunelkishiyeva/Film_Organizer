@@ -6,7 +6,7 @@ class Header extends Component {
         return (
             <div className="header">
                 <h1 className="header__title">
-                    Mustsee
+                    Daddy Go =>
                 </h1>
             </div>
         );
