@@ -59,3 +59,10 @@
     opacity: 0.5;
     transition: all 0.2s linear;
 }
+.saved{
+    border: none;
+    background-color: red;
+    padding: 10px 15px;
+    color: #FFEEDB;
+    font-size: 14px;
+}
